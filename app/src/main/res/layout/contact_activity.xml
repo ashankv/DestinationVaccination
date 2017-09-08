@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <include layout="@layout/app_bar"/>
+
+    <org.destvac.destinationvacctionation.TypefacedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Addresses:"
+        android:layout_marginTop="70dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="12dp"
+        font:typeface="Roboto-Bold.ttf"
+        xmlns:font="http://schemas.android.com/apk/res/org.destvac.destinationvacctionation"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="95dp"
+        android:id="@+id/myLinLay">
+
+        <org.destvac.destinationvacctionation.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n ashank.verma@gmail.com \n\n advaiths@gmail.com \n\n rishabram@gmail.com \n\n jonathan.c889@gmail.com \n\n superwilliamzeng@gmail.com \n\n kiran.raja22@gmail.com"/>
+    </LinearLayout>
+
+    <org.destvac.destinationvacctionation.TypefacedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myLinLay"
+        android:text="Facebook Page:"
+        android:layout_marginTop="325dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="12dp"
+        font:typeface="Roboto-Bold.ttf"
+        xmlns:font="http://schemas.android.com/apk/res/org.destvac.destinationvacctionation"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="350dp">
+
+        <org.destvac.destinationvacctionation.TypefacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n https://www.facebook.com/destinationvaccination"/>
+    </LinearLayout>
+
+
+
+
+    <android.support.design.widget.NavigationView
+        app:menu="@menu/menu_drawer"
+        android:id="@+id/contact_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+
+        app:itemIconTint="@color/colorAccent" >
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="60dp"
+        >
+
+        <org.destvac.destinationvacctionation.TypefacedTextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=
+"     Let us begin by asserting the definition of rights and freedoms that we will use as the fundamental basis of our contention. The Declaration of Independence, a document exemplifying our beliefs as Americans states, “We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.” From this statement, we gather that all people have the right to be alive, treated fairly, and pursue their happiness freely. Therefore, it is not also a jump to assume that prohibiting such rights is morally wrong and frowned upon, and so anything threatening these rights should be eliminated by the government we have created for that purpose. \n\n
+
+      Please let it be known that we fully respect the opinions of others, but we feel it is necessary to argue for protection of a fundamental human right. In fact by not doing so just to be more sensitive to others is tantamount to failing to carry out our duties both as citizens to the United States and to the human race. If our credibility or our ability to achieve such ends is dubious, remember that as Margaret Mead once stated, “Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.”  \n\n
+
+      Since Edward Jenner's discovery of smallpox vaccine in 1796, vaccination has proven a medical miracle in infectious disease prevention. Vaccines have virtually eliminated diseases such as polio, diphtheria, and pertussis in America. Despite these successes, an atmosphere of public mistrust and increasing parental refusal of vaccines has started to develop fueled by misconceptions and media sensationalism of rare adverse events. We assert that parents should not be able to opt-out their children from vaccinations, unless there is a medically relevant exemption. \n\n
+
+      Vaccines exemplify the necessity of human solidarity. The efficacy of vaccines relies on usage at a community level, referred to as herd immunity. Herd immunity offers protection to those who may be immunocompromised, or unvaccinated because they are surrounded by vaccinated individuals. This concept is based on the premise that chains of infections will be interrupted and the spread of disease will be hindered. It is imperative that a significant majority of the population be vaccinated to reap the benefits of immunization. In other words, the choice of  parents to not vaccinate their child not only harms that one family, but also puts our entire community at risk. Public schools especially, places shared by all children, need the protection of herd immunity. The outbreak of measles in 2014, a highly contagious disease, once nearly eradicated, has occurred in California due to high percentages of unvaccinated children. \n\n
+
+      False prophets and dubious statistics are playing on the fears of parents who may not completely understand the benefits of vaccines. The most prevalent concern among some parents is the supposed association between vaccines and autism-spectrum disorders (ASDs). Eight Years Ago, a famous celebrity name Jenny McCarthy publicly stated that vaccines caused autism in her son. McCarthy was like the high-magnitude earthquake that caused the tsunami of anti-vaccination supporters. Because McCarthy was so famous, an aftershock of media sensation followed. All over the television, radio, and internet were rumors of autism, mental retardation, and deformation. Amid all this chaos, no one stopped to think “Where’s the evidence?” Some claim the presence of preservatives and adjuvants such as thimerosal and aluminum in vaccines may cause damage to brain tissue in children. The Institute of Medicine concluded that epidemiological evidence from multiple studies favors rejection of causation between thimerosal-containing vaccines and autism and other adverse neuropsychological outcomes. In spite of scientific evidence, the debate over vaccines and ASDs rages on, partly due to the disparity between the scientific literature and the media. \n\n
+
+      Before many of you take the opposite side in the name of freedom of choice, let it be known that failure to achieve herd immunity for any reason endangers all of us. The health and well being of our neighbors, our coworkers, our friends, and our families are all at risk if unvaccinated individuals are free to trample through our society as carriers of virulent diseases. The rights to be alive and to pursue happiness freely are contingent to the right to live in an healthy environment free from the risks of contracting dangerous viruses. \n\n
+
+      Receiving vaccines must be cast as a social responsibility. Sending an unvaccinated child to a school can cause serious health risks to other children, our children. When unabridged individual rights may endanger the public health, it is safer to limit those for the greater good. Irrational reasoning threatens our lives. The parental prerogative to place the interest of their child over the herd immunity should not grant a moral right to refuse all childhood vaccines. Why should ours as well as our families’ health be compromised because of the parochial beliefs of others, beliefs with no scientific basis? Is a freedom that diminishes the freedoms of others deserve to remain a freedom? From the two different perspectives, one primarily appealing to scientific facts and the other largely to emotions, it is critical to recognize that public health is the larger issue at hand. To see the return of preventable epidemics and people suffering the diseases of their ancestors, due to lack of awareness of vaccine safety, could only be viewed as a painful regression. \n\n
+
+      Join us in our fight for some of our fundamental human rights. Join us in our fight to mandate vaccinations throughout the nation. Join us in our journey to Destination: Vaccination. \n\n"
+
+            android:textColor="#000000"
+            />
+
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        app:menu="@menu/menu_drawer"
+        android:id="@+id/speech_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+
+        app:itemIconTint="@color/colorAccent" >
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
